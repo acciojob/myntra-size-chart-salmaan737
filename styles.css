@@ -1,2 +1,40 @@
 
 /* Your CSS Code here. */
+/* Apply some basic styling to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Style the header row */
+thead th {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the data rows */
+tbody td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add some hover effect to the data cells */
+tbody td:hover {
+    background-color: #f0f0f0;
+}
+
+/* Apply responsive styling for smaller screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+    
+    thead th,
+    tbody td {
+        padding: 5px;
+    }
+}
